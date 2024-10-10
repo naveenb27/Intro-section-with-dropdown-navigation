@@ -1,0 +1,158 @@
+:root{
+    --almost-white: rgba(250, 250, 250, 255);
+    --white: hsl(0, 0%, 100%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 60px;
+    padding-block: 30px;
+}
+
+.lists{
+    display: flex;
+    gap: 55px;
+}
+
+.logo{
+    -webkit-text-stroke: 1.5px #222; 
+    /* border: 1px solid red; */
+    color: #222;
+    font-size: 35px;
+}
+
+.list{
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    font-size: 14px;
+    margin-top: 3px;
+    font-weight: 700;
+    gap: 50px;
+}
+
+.hidden{
+    display: none;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    position: relative;
+    gap: 5px;
+}
+
+.feature-list, .feature-list-1{
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
+    padding-block: 10px;
+    padding-inline: 5px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.feature-list-1{
+    width: 110px;
+}
+
+.feature-list div, .feature-list-1 div{
+    display: flex;
+    background-color: white;
+    gap: 5px;
+    cursor: pointer;
+    padding-block: 12px;
+    padding-inline:15px;
+}
+
+
+.feature-list div p{
+    background-color: white;
+    cursor:  pointer;
+} 
+
+.nav-list li{
+    list-style: none;
+
+    &:hover{
+        cursor: pointer;
+        color: #111;
+    }
+}  
+
+.login{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    color: #555;
+    font-weight: 700;
+}
+
+.button button{
+    padding-inline: 16px;
+    font-weight: 700;
+    padding-block: 10px;
+    color: #555;
+    border: 1px solid #555;
+    background: none;
+    border-radius: 12px;
+}
+
+.drop-up{
+    display: none;
+}
+
+.nav{
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .list{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        width: 40%;
+        align-items: start;
+        gap: 20px;
+        padding-block-start: 10px;
+        padding-inline: 20px;
+        padding-right: 50px;
+        height: 100vh;
+    }
+
+    .list-active{
+        display: none;
+    }
+
+    .close-active{
+        display: none;
+    }
+
+    .feature-list, .feature-list-1{
+        z-index: 1;
+    }
+    .login{
+        display: none;
+    }
+
+    .nav{
+        display: block;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .nav-container{
+        padding-inline: 6%;
+    }
+
+    .dontshow-list{
+        display: none;
+    }
+}
