@@ -51,6 +51,22 @@
     line-height: 28px;
 }
 
+.clients{
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.audio{
+    /* height: 0px; */
+}
+
+.clients img{
+    /* height: 30px; */
+}
+
 @media (max-width: 900px) {
     .Mobile{
         display: block;
