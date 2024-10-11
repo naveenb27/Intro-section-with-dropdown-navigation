@@ -9,8 +9,8 @@ const Section = () => {
                 <div>Learn more</div>
             </div>
             <div className="container-2">
-                <img className='Desktop' src="./public/images/image-hero-desktop.png" alt="desktop image" />
-                <img className='Mobile' src="./public/images/image-hero-mobile.png" alt="desktop image" />
+                <img className='Desktop' src="./images/image-hero-desktop.png" alt="desktop image" />
+                <img className='Mobile' src="./images/image-hero-mobile.png" alt="desktop image" />
             </div>
         </div>
     )

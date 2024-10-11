@@ -58,30 +58,30 @@ const Navigation = () => {
             <li onClick={setNav}>Features</li>
             <img
               className="drop-down"
-              src="./public/images/icon-arrow-down.svg"
+              src="./images/icon-arrow-down.svg"
               alt="down"
             />
             <img
               className="drop-up"
-              src="./public/images/icon-arrow-up.svg"
+              src="./images/icon-arrow-up.svg"
               alt="up"
             />
 
             <div className={navStatus ? 'feature-list' : 'hidden'}>
               <div>
-                <img src="./public/images/icon-todo.svg" alt="todo" />
+                <img src="./images/icon-todo.svg" alt="todo" />
                 <p>Todo List</p>
               </div>
               <div>
-                <img src="./public/images/icon-calendar.svg" alt="todo" />
+                <img src="./images/icon-calendar.svg" alt="todo" />
                 <p>Calendar</p>
               </div>
               <div>
-                <img src="./public/images/icon-reminders.svg" alt="todo" />
+                <img src="./images/icon-reminders.svg" alt="todo" />
                 <p>Reminders</p>
               </div>
               <div>
-                <img src="./public/images/icon-planning.svg" alt="todo" />
+                <img src="./images/icon-planning.svg" alt="todo" />
                 <p>Planing</p>
               </div>
             </div>
@@ -90,12 +90,12 @@ const Navigation = () => {
             <li onClick={setNav1}>Company</li>
             <img
               className="drop-down"
-              src="./public/images/icon-arrow-down.svg"
+              src="./images/icon-arrow-down.svg"
               alt="down"
             />
             <img
               className="drop-up"
-              src="./public/images/icon-arrow-up.svg"
+              src="./images/icon-arrow-up.svg"
               alt="up"
             />
             <div className={navStatus1 ? 'feature-list-1' : 'hidden'}>
@@ -122,13 +122,13 @@ const Navigation = () => {
         <img
           onClick={navAct}
           className={!navActive ? 'list-active' : ''}
-          src="./public/images/icon-menu.svg"
+          src="./images/icon-menu.svg"
           alt="nav-menu"
         />
         <img
           onClick={navAct}
           className={!navActive ? '' : 'close-active'}
-          src="./public/images/icon-close-menu.svg"
+          src="./images/icon-close-menu.svg"
           alt="close"
         />
       </div>
